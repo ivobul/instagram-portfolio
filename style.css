@@ -1,0 +1,264 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+h1,
+h2 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Header */
+.masthead {
+  background-image: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  color: #fff;
+  height: 950px;
+  position: relative;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+
+nav .item {
+  margin-right: 10px;
+}
+
+nav .circle-icon {
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
+
+nav .brand {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 376px) {
+  nav .brand {
+    flex: 100%;
+  }
+}
+
+/* Introduction - Masthead */
+.intro {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 3.5rem;
+}
+
+@media (max-width: 600px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
+}
+
+.intro p {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+/* Main */
+.posts {
+  background-color: #eeeeee;
+  padding: 50px 0 100px;
+  text-align: center;
+}
+
+.posts h2 {
+  color: #7F7E7E;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.grid {
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  
+  justify-content: center;
+  margin-top: 50px;
+  row-gap: 20px;
+}
+
+.grid-item > div  {
+  position: relative;
+}
+
+.grid-item img {
+  height: 270px;
+}
+
+.likes {
+  bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+  left: 15px;
+  position: absolute;
+}
+
+.grid-item .caption {
+  background-color: #fff;
+  color: #535151;
+  font-size: .9rem;
+  margin-top: -5px;
+  min-height: 100px;
+  padding: 15px;
+  text-align: left;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #7F7E7E;
+}
+
+.contact {
+  padding: 100px 0;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #3E3C3C;
+  margin-bottom: 20px;
+}
+
+.contact p{
+  margin-bottom: 40px;
+}
+
+.contact p span{
+  display: block;
+}
+
+.contact .btn {
+  background-color: #3E3C3C;
+  color: #fff;
+  display: inline-block;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+@media (max-width: 500px) {
+  .contact .btn {
+    max-width: 100%;
+  } 
+}
+
+.copyright {
+  border-top: 1px solid rgb(196, 189, 189);
+  padding: 25px 0;
+  text-transform: uppercase;
+}
+
+.copyright small {
+  font-size: .85rem;
+}
+
