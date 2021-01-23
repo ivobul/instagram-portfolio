@@ -94,6 +94,7 @@ h2 {
 
 /* Header */
 .masthead {
+  background-attachment: fixed;
   background-image: url(images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,9 +120,9 @@ nav .circle-icon {
   border: 2px solid #fff;
   border-radius: 50%;
   display: flex;
-  height: 40px;
+  height: 30px;
   justify-content: center;
-  width: 40px;
+  width: 30px;
 }
 
 nav .brand {
@@ -143,6 +144,7 @@ nav .brand {
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
 }
 
 .intro h1 {
@@ -173,25 +175,36 @@ nav .brand {
   font-weight: 500;
 }
 
+/* Grid */
 .grid {
   column-gap: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 320px);
-  
   justify-content: center;
   margin-top: 50px;
   row-gap: 20px;
 }
 
-.grid-item > div  {
-  position: relative;
+/* Grid item */
+.card {
+  display: flex;
+  flex-direction: column
 }
 
-.grid-item img {
+.card:hover {
+  cursor: pointer;
+}
+
+.card .card-img  {
+  position: relative;
   height: 270px;
 }
 
-.likes {
+.card img {
+  height: 100%;
+}
+
+.card .likes {
   bottom: 20px;
   color: #fff;
   font-weight: bold;
@@ -199,18 +212,13 @@ nav .brand {
   position: absolute;
 }
 
-.grid-item .caption {
+.card .card-text {
   background-color: #fff;
   color: #535151;
   font-size: .9rem;
-  margin-top: -5px;
   min-height: 100px;
   padding: 15px;
   text-align: left;
-}
-
-.grid-item:hover {
-  cursor: pointer;
 }
 
 /* Footer */
