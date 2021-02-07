@@ -92,6 +92,10 @@ h2 {
   text-transform: uppercase;
 }
 
+header {
+  min-height: 100vh;
+}
+
 /* Header */
 .masthead {
   background-attachment: fixed;
@@ -100,7 +104,6 @@ h2 {
   background-size: cover;
   background-position: center bottom;
   color: #fff;
-  height: 950px;
   position: relative;
 }
 
@@ -112,6 +115,8 @@ nav {
 }
 
 nav .item {
+  align-items: center;
+  display: flex;
   margin-right: 10px;
 }
 
@@ -132,8 +137,14 @@ nav .brand {
 }
 
 @media screen and (max-width: 376px) {
+  nav {
+    justify-content: center;
+    padding-top: 1.5rem;
+  }
   nav .brand {
     flex: 100%;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 
@@ -147,13 +158,20 @@ nav .brand {
   width: 100%;
 }
 
+@media screen and (max-width: 376px) {
+  .intro {
+    top: 60%;
+    transform: translate(-50%, -60%);
+  }
+}
+
 .intro h1 {
   font-size: 3.5rem;
 }
 
 @media (max-width: 600px) {
   .intro h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -269,4 +287,3 @@ footer {
 .copyright small {
   font-size: .85rem;
 }
-
