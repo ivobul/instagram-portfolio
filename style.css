@@ -204,7 +204,7 @@ nav .brand {
   row-gap: 20px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 360px) {
   .grid {
     grid-template-columns: repeat(auto-fill, 100%);
   } 
