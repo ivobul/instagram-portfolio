@@ -202,10 +202,10 @@ nav .brand {
   justify-content: center;
   margin-top: 50px;
   row-gap: 20px;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
-@media ( max-width: 1060px) {
+@media ( max-width: 1120px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -214,6 +214,7 @@ nav .brand {
 @media ( max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
+    padding: 0 20px;
   }
 }
 
