@@ -83,10 +83,6 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
-.container {
-
-}
-
 h1,
 h2 {
   letter-spacing: 3px;
@@ -143,6 +139,7 @@ nav .brand {
     justify-content: center;
     padding-top: 1.5rem;
   }
+  
   nav .brand {
     flex: 100%;
     margin-bottom: 10px;
@@ -153,6 +150,7 @@ nav .brand {
 /* Introduction - Masthead */
 .intro {
   left: 50%;
+  padding: inherit;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -162,8 +160,7 @@ nav .brand {
 
 @media screen and (max-width: 376px) {
   .intro {
-    padding:
-    top: 60%;
+    padding: top: 60%;
     transform: translate(-50%, -60%);
   }
 }
