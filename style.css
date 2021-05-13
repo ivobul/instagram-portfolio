@@ -202,6 +202,10 @@ nav .brand {
   justify-content: center;
   margin-top: 50px;
   row-gap: 20px;
+  padding: 0 20px;
+}
+.grid img {
+  width: 100%;
 }
 @media ( max-width: 1060px) {
   .grid {
