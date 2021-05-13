@@ -198,10 +198,21 @@ nav .brand {
 .grid {
   column-gap: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 360px);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   margin-top: 50px;
   row-gap: 20px;
+}
+@media ( max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media ( max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 360px) {
