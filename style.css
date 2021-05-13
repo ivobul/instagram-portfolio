@@ -160,7 +160,7 @@ nav .brand {
 
 @media screen and (max-width: 376px) {
   .intro {
-    padding: top: 60%;
+    top: 60%;
     transform: translate(-50%, -60%);
   }
 }
