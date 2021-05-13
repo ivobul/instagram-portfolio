@@ -199,7 +199,7 @@ nav .brand {
   column-gap: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 360px);
-  justify-content: center;
+  justify-content: stretch;
   margin-top: 50px;
   row-gap: 20px;
 }
