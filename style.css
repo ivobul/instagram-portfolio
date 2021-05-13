@@ -204,25 +204,17 @@ nav .brand {
   row-gap: 20px;
   padding: 0 20px;
 }
-.grid img {
-  width: 100%;
-}
+
 @media ( max-width: 1060px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media ( max-width: 500px) {
+@media ( max-width: 767px) {
   .grid {
     grid-template-columns: 1fr;
   }
-}
-
-@media (max-width: 360px) {
-  .grid {
-    grid-template-columns: repeat(auto-fill, 100%);
-  } 
 }
 
 /* Grid item */
