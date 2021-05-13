@@ -198,7 +198,7 @@ nav .brand {
 .grid {
   column-gap: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 260px);
+  grid-template-columns: repeat(auto-fill, 300px);
   justify-content: center;
   margin-top: 50px;
   row-gap: 20px;
@@ -222,7 +222,7 @@ nav .brand {
 
 .card .card-img  {
   position: relative;
-  height: 240px;
+  height: 280px;
 }
 
 .card img {
