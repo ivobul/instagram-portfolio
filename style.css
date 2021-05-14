@@ -203,9 +203,9 @@ nav .brand {
   row-gap: 20px;
 }
 
-@media ( max-width: 992px) {
+@media ( max-width: 1200px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 44%);
   }
 }
 
@@ -247,7 +247,7 @@ nav .brand {
   background-color: #fff;
   color: #535151;
   font-size: .9rem;
-  max-height: 110px;
+  min-height: 100px;
   padding: 15px;
   text-align: left;
 }
