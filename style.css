@@ -183,7 +183,7 @@ nav .brand {
 /* Main */
 .posts {
   background-color: #eeeeee;
-  padding: 50px 0 100px;
+  padding: 50px 32px 100px;
   text-align: center;
 }
 
@@ -197,11 +197,10 @@ nav .brand {
 .grid {
   column-gap: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, 320px);
   justify-content: center;
   margin-top: 50px;
   row-gap: 20px;
-  padding: 0 40px;
 }
 
 @media ( max-width: 1120px) {
