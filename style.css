@@ -209,7 +209,7 @@ nav .brand {
   }
 }
 
-@media ( max-width: 600px) {
+@media ( max-width: 767px) {
   .grid {
     grid-template-columns: 1fr;
   }
