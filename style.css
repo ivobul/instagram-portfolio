@@ -197,7 +197,7 @@ nav .brand {
 .grid {
   column-gap: 20px;
   display: grid;
-  grid-template-columns: repeat(4, 21%);
+  grid-template-columns: repeat(4, 22%);
   justify-content: center;
   margin-top: 50px;
   row-gap: 20px;
