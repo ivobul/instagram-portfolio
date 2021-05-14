@@ -203,7 +203,7 @@ nav .brand {
   row-gap: 20px;
 }
 
-@media ( max-width: 1120px) {
+@media ( max-width: 992px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
